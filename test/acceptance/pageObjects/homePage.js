@@ -14,16 +14,23 @@ module.exports = {
                     .useCss();
             },
 
-            browsedToListOfUsers: function () {
-                return this.useXpath()
-                    .waitForElementVisible('@usersAndGroups')
-                    .click('@usersAndGroups')
-                    .waitForElementVisible('@listOfUsers')
-                    .click('@listOfUsers')
-                    .useCss();
-            }
-        }
-    ],
+			browsedToListOfUsers: function () {
+				return this.useXpath()
+					.waitForElementVisible('@usersAndGroups')
+					.click('@usersAndGroups')
+					.waitForElementVisible('@listOfUsers')
+					.click('@listOfUsers')
+					.useCss();
+			},
+
+			browseToModulesApplicationsPage: function () {
+				return this.useXpath()
+					.waitForElementVisible('@modulesApplications')
+					.click('@modulesApplications')
+					.useCss();
+			}
+		}
+	],
 
     elements: {
         usersAndGroups: {
@@ -36,9 +43,14 @@ module.exports = {
             locateStrategy: 'xpath'
         },
 
-        listOfUsers: {
-            selector: '//a[@class="vsmenu"][@title="List of users"]',
-            locateStrategy: 'xpath'
-        }
-    }
+		listOfUsers: {
+			selector: '//a[@class="vsmenu"][@title="List of users"]',
+			locateStrategy: 'xpath'
+		},
+
+		modulesApplications: {
+			selector: '//div[contains(@class,"menu_contenu")]/a[@title="Modules/Applications"]',
+			locateStrategy: 'xpath'
+		}
+	}
 };
