@@ -1,6 +1,7 @@
 # Dolibarr language file - Source file is en_US - vendors
 Suppliers=Pārdevēji
 SuppliersInvoice=Piegādātāja rēķins
+SupplierInvoices=Piegādātāja rēķini
 ShowSupplierInvoice=Rādīt piegādātāja rēķinu
 NewSupplier=Jauns pārdevējs
 History=Vēsture
@@ -38,6 +39,7 @@ MenuOrdersSupplierToBill=Pirkuma pasūtījumi rēķinam
 NbDaysToDelivery=Piegādes termiņš (dienas)
 DescNbDaysToDelivery=Šī pasūtījuma produktu ilgākais piegādes termiņš
 SupplierReputation=Pārdevēja reputācija
+ReferenceReputation=Atsauces reputācija
 DoNotOrderThisProductToThisSupplier=Nepasūtīt
 NotTheGoodQualitySupplier=Zemas kvalitātes
 ReputationForThisProduct=Reputācija
